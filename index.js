@@ -12,17 +12,24 @@ const getQuote = () => {
     const createQuoteDiv = (quote) => {
         const quoteContainer = document.createElement('div')
         const sentence = document.createElement('p')
-        const character = document.createElement('h3')
+        const character = document.createElement('p')
 
-        quote.innerText = sentence
+        sentence.innerText = quote.sentence
         character.innerText = character['name']
 
-        quoteContainer.append(sentence, character)
+        quoteContainer.append(sentence, input='name')
 
-        return quoteContainer 
+        return quoteContainer
     }
      
+    const appendQuote = (quoteDiv) => {
+        const quoteContainer = document.getElementById('quote-container')
+        quoteContainer.append(quoteDiv)
+    
+}
+
     getQuote().then((quote) => {
         const quoteDiv = createQuoteDiv(quote)
-        console.log(quoteDiv)
+        appendQuote(quoteDiv)
     })
+
