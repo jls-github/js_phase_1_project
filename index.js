@@ -7,29 +7,38 @@ const getQuote = () => {
 }
     getQuote().then(console.log)
 
-    //create components
+// Creating the components
 
-    const createQuoteDiv = (quote) => {
-        const quoteContainer = document.createElement('div')
-        const sentence = document.createElement('p')
-        const character = document.createElement('p')
+const createQuoteDiv = (quote) => {
+    const quoteContainer = document.createElement('div')
+    const sentence = document.createElement('p')
+    const character = document.createElement('footer')
 
-        sentence.innerText = quote.sentence
-        character.innerText = character['name']
+    sentence.innerText = quote.sentence
+    character.innerText = quote.character.name
 
-        quoteContainer.append(sentence, input='name')
+    quoteContainer.append(sentence,character)
 
-        return quoteContainer
-    }
-     
-    const appendQuote = (quoteDiv) => {
-        const quoteContainer = document.getElementById('quote-container')
-        quoteContainer.append(quoteDiv)
-    
+    return quoteContainer
 }
+ const appendQuote= (quoteDiv) => {
+    const quoteContainer = document.getElementById('quote-container')
+    quoteContainer.innerHTML = ""
+    quoteContainer.append(quoteDiv)
 
+
+ }
+
+const generateQuote = () => {
     getQuote().then((quote) => {
         const quoteDiv = createQuoteDiv(quote)
         appendQuote(quoteDiv)
+    
     })
+    
+}
+
+generateQuote()
+
+
 
