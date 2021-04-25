@@ -1,3 +1,73 @@
 body {
-    background: aqua;
+    background-image: url(./GoT/Game-of-Thrones-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+h1 {
+    margin: 100px auto;
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    font-weight: 100;
+    text-align: center;
+    color: #000000; 
+   
+}
+
+h1:before{
+content:"";
+display:block;
+width: 120px;
+height:2px;
+background: #000;
+position: absolute;
+right: 0;
+top: 50%;
+z-index: -2;
+
+}
+
+h1:after{
+        content:"";
+        display:block;
+        width: 120px;
+        height:2px;
+        background: #000;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        z-index: -2;
+        
+}
+
+
+button {
+    font-family: 'Cinzel', serif;
+    border: 1px solid #D74177;
+    background-color: ghostwhite;
+    padding:  10px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 100px;
+
+}
+
+    
+#quote-container {
+ color: ghostwhite;
+ font-family: 'Cinzel', serif;
+padding-top: 700px;
+ margin: 10px;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ 
+
+
 }

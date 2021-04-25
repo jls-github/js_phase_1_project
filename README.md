@@ -13,7 +13,7 @@ User Stories
     -Index.js
     -mystyles.css
 
--Use the Game of Thrones API : https://game-of-thrones-quotes.herokuapp.com/v1/random   
+-Use the Game of Thrones API resources : https://game-of-thrones-quotes.herokuapp.com/v1/random  ,  https://game-of-thrones-quotes.herokuapp.com/v1/author/
 -Go through the API to understand the data available to us
 
 -Create fetch functions

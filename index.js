@@ -38,7 +38,8 @@ const generateQuote = () => {
     
 }
 
-generateQuote()
+const newQuoteBtn = document.getElementById('new-quote-btn')
+newQuoteBtn.addEventListener('click', generateQuote)
 
-
+generateQuote();
 
